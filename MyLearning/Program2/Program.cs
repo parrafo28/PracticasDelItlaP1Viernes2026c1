@@ -81,11 +81,7 @@
             }
 
     }
-
-
-
-
-
+     
 
     if (typedOperation != 5)
     {
@@ -99,25 +95,25 @@
     }
 
 }
-catch (DivideByZeroException ex)
-{
-    Console.WriteLine("Error: No se puede dividir entre cero");
-    //Console.WriteLine($"Detalle del error: {ex.Message}");
-}
-
 catch (Exception ex)
 {
     Console.WriteLine("Error: tu si eres palomo");
     //Console.WriteLine($"Detalle del error: {ex.Message}");
 
-    if (ex.Message.Contains("was not in a correct format."))
-    {
-        Console.WriteLine("Parece que has ingresado un valor no numérico. Por favor, asegúrate de ingresar solo números válidos.");
-    }
-    else
-    {
+    //if (ex.Message.Contains("was not in a correct format."))
+    //{
+    //    Console.WriteLine("Parece que has ingresado un valor no numérico. Por favor, asegúrate de ingresar solo números válidos.");
+    //}
+    //else
+    //{
         Console.WriteLine($"Detalle del error: {ex.Message}");
-    }
+    //}
 }
+finally
+{
+    Console.WriteLine("Gracias por usar la calculadora!!!");
+}
+
+
 
 Console.ReadKey();
